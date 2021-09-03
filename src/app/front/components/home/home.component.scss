@@ -58,3 +58,36 @@
 //   background: grey !important;
 //   z-index: 100;
 // }
+
+.slider .slick-dots li button,
+.only-mobile-slider .slick-dots li button {
+}
+
+.slider .slick-dots li.slick-active button,
+.only-mobile-slider .slick-dots li.slick-active button {
+}
+
+.slick-dots {
+  background: red !important;
+}
+
+// .carousel .slick-dots li button:before {
+//   width: 10px;
+//   height: 10px;
+//   background-color: #069be7;
+//   border-radius: 50%;
+//   overflow: hidden;
+//   text-indent: -9999px;
+//   border: none;
+//   display: block;
+//   padding: 0;
+//   -webkit-transition: width 150ms linear, height 150ms linear, background-color 150ms ease;
+//   transition: width 150ms linear, height 150ms linear, background-color 150ms ease;
+// }
+.carousel .slick-dots li.slick-active button:before {
+  background-color: #999;
+}
+.wrapper {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
