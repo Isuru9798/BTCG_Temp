@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { AdminSigninComponent } from './authentication/components/admin-signin/admin-signin.component';
 import { SigninComponent } from './authentication/components/signin/signin.component';
 import { SignupComponent } from './authentication/components/signup/signup.component';
 import { AdminComponent } from './layouts/admin/admin.component';
+import { FrontLayoutComponent } from './layouts/front-layout/front-layout.component';
 
 const routes: Routes = [
   {
@@ -13,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: AppComponent,
+    component: FrontLayoutComponent,
     children: [
       {
         path: '', loadChildren: () =>
@@ -24,6 +26,10 @@ const routes: Routes = [
   {
     path: 'authentication/signin',
     component: SigninComponent
+   },
+  {
+    path: 'authentication/admin',
+    component: AdminSigninComponent
    },
    {
     path: 'authentication/signup',

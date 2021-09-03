@@ -1,8 +1,8 @@
-<div class="video-wrapper slide">
+<div class="video-wrapper slide" *ngIf="data.length > 0">
   <a href="">
       <div class="video-component" data-cy="video-component">
-          <span class="video-image"
-              style="background-image: url('https://img.youtube.com/vi/h4x5BvWmh4s/hqdefault.jpg')">
+          <span class="video-image">
+            <img src="{{ Data.img }}" alt="">
               <i class="play-icon"></i>
           </span>
 

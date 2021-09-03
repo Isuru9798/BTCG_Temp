@@ -1,0 +1,15 @@
+.slick-track {
+    display: flex !important;
+}
+
+.slick-slide {
+    height: auto;
+}
+
+.right-image {
+    max-width: 780px;
+    height: 565px;
+    margin: 10px;
+    float: right;
+    flex: 1;
+}
