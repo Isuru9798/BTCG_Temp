@@ -11,6 +11,8 @@ import { FrontModule } from './front/front.module';
 import { AdminComponent } from './layouts/admin/admin.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FrontLayoutComponent } from './layouts/front-layout/front-layout.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 
 @NgModule({
   declarations: [
@@ -25,8 +27,10 @@ import { FrontLayoutComponent } from './layouts/front-layout/front-layout.compon
     AuthenticationModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
-    ToastrModule
+    ToastrModule,
+    SlickCarouselModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

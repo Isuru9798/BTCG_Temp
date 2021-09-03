@@ -6,13 +6,15 @@ import { HomeComponent } from "./components/home/home.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LayoutsModule } from '../layouts/layouts.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FrontRoutingModule,
     SlickCarouselModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    LayoutsModule
     
   ],
   declarations: [

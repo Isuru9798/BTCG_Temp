@@ -1,22 +1,7 @@
-<div class="video-wrapper slide" *ngIf="data.length > 0">
-  <a href="">
-      <div class="video-component" data-cy="video-component">
-          <span class="video-image">
-            <img src="{{ Data.img }}" alt="">
-              <i class="play-icon"></i>
-          </span>
-
-          <div class="video-description">
-
-              <div class="title">Black Ferns Sevens pay tribute to outgoing coach Allan
-                  Bunting</div>
-              <div class="description">"He connects us to the Black jersey. Back to our
-                  families, back to our…</div>
-          </div>
-
-          <p class="time time-ago mt-auto">
-              <time moment datetime="2021-08-27 11:42:54"></time>
-          </p>
+<ngx-slick-carousel class="carousel" #slickModal1="slick-carousel" [config]="slideConfigHeader" *ngIf="dataPass">
+    <div ngxSlickItem *ngFor="let slide of fullWidthSlider" class="slide">
+       <div class="bannerStyle">
+          <img src="{{ slide.img }}" alt="">
       </div>
-  </a>
-</div>
+    </div>
+ </ngx-slick-carousel>
