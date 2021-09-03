@@ -43,9 +43,9 @@ export class HomeComponent implements OnInit {
    ];
 
    fullWidthSlider = [
-      { img: "https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F210823000222-bitcoin-illustration.jpg" },
-      { img: "https://images.cnbctv18.com/wp-content/uploads/2021/05/bitcoin-768x432.jpg" },
-      { img: "https://embryo.theironnetwork.org/assets/images/slider-1.jpg" }
+      { img: "https://i.pinimg.com/originals/fb/af/33/fbaf33482904c16a8547440fd297b865.jpg" },
+      { img: "https://jockeyp2p.com/wp-content/uploads/2020/10/64.jpg" },
+      { img: "https://www.fidelity.com/bin-public/060_www_fidelity_com/images/Viewpoints/AT/bitcoin_banner_2018new.jpg" }
    ];
 
    // slideConfig = { "slidesToShow": 4, "slidesToScroll": 4 };
@@ -85,10 +85,11 @@ export class HomeComponent implements OnInit {
 
    
 
-   constructor() { }
+   constructor() { 
+      this.headerSlider();
+   }
 
    ngOnInit() {
-      this.headerSlider();
    }
 
    headerSlider() {
