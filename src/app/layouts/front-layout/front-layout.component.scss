@@ -4014,9 +4014,14 @@ body:not(.is-anonymous):not(.is-logged-in) .actions {
 }
 
 .news-component .time {
-  position: absolute;
-  bottom: 15px;
+  // position: absolute;
+  // bottom: 0px;
+  // left: 20px;
+  color: #999;
+  text-transform: uppercase;
   left: 20px;
+  bottom: 0px;
+  position: absolute;
 }
 
 #news-block .head h4,
@@ -7452,4 +7457,3 @@ iframe {
 .genericpage--partners .promobladelist + .promobladelist {
   border-top: 0;
 }
-
