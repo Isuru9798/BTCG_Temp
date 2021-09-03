@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-slider-card',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderCardComponent implements OnInit {
 
+  @Input() Data = [];
+
   constructor() { }
 
   ngOnInit() {
+    this.Data;
   }
 
 }
