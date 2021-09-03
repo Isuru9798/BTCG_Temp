@@ -4,7 +4,51 @@
 
       <div class="element propellerhead__rugby__elements__calltoactionblock">
         <div class="section">
-          <div class="wrapper">
+          <!-- <div class="wrapper">
+            <div class="img-col left-col">
+              <div class="img"
+                style="background-image: url('https://www.allblacks.com/assets/Uploads/HEADER-IMAGE-2__FocusFillWzgwMCw1MDAsIngiLDg5XQ.png')"
+                title="HEADER IMAGE 2"></div>
+            </div>
+            <div class="info-col right-col">
+              <div class="info info-with-image ">
+                <h2>Guess the Score with Fortinet</h2>
+                <div class="time">All Blacks V Australia, 5 September</div>
+                <div class="blurb">Guess the score correctly and go in the draw to win $1,000 NZD All Blacks Shop
+                  voucher</div>
+                <div class="actions">
+
+                  <a href="https://win.allblacks.com/" target="_blank" class="btn btn-lg btn-outline-dark">GUESS THE
+                    SCORE</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <section class="image-text section row">
+            <div class="wrapper">
+
+              <div class="img-col left-col">
+                <div class="img"
+                  style="background-image: url('https://images.cnbctv18.com/wp-content/uploads/2021/05/bitcoin-768x432.jpg')"
+                  title="GettyImages 1327958126"></div>
+              </div>
+
+              <div class="info-col right-col">
+                <div class="info info-with-image ">
+                  <h2>GUESS THE SCORE WITH FORTINET
+                  </h2>
+                  <div class="time">OAll Blacks V Australia, 5 September</div>
+                  <div class="blurb">Guess the score correctly and go in the draw to win $1,000 NZD All Blacks Shop
+                    voucher
+                  </div>
+                  <div class="actions">
+                    <a href="the-haka.html" class="btn btn-lg btn-outline-dark">GUESS THE SCORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- <div class="wrapper">
             <h2>2021 Bitcoin Guiders Tickets</h2>
             <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
               Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
@@ -14,7 +58,7 @@
               (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
               ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
               amet..", comes from a line in section 1.10.32.</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -22,8 +66,23 @@
   </div>
   <div class="element propellerhead__rugby__elements__heroblock" id="e27">
     <section id="hero" class="section row" data-cy="latest-news">
-      <div class="wrapper">
-        <div class="left-col">
+      <ngx-slick-carousel class="carousel" #slickModal1="slick-carousel" [config]="slideConfigHeader">
+        <div ngxSlickItem *ngFor="let slide of fullWidthSlider" class="slide">
+          <div class="bannerStyle">
+            <img src="{{ slide.img }}" alt="" style="width: 100%;
+            height: 100%;
+            display: block;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;">
+          </div>
+        </div>
+      </ngx-slick-carousel>
+      <!-- <div class="wrapper"> -->
+        
+        <!-- <app-slider-card ></app-slider-card> -->
+
+        <!-- <div class="left-col">
           <div class="featured">
             <a href="" class="main-article" data-cy="article">
               <div class="img full-profile-image">
@@ -38,13 +97,12 @@
                 <p class="time time-ago mt-auto">
                   <time moment datetime="2021-08-27 18:25:03"></time>
                 </p>
-                <!-- <button class="btn btn-lg btn-primary">Read More</button> -->
               </div>
             </a>
           </div>
-        </div>
+        </div> -->
 
-        <div class="left-col">
+        <!-- <div class="left-col">
           <div class="featured">
             <a href="" class="main-article" data-cy="article">
               <div class="img full-profile-image">
@@ -63,7 +121,7 @@
               </div>
             </a>
           </div>
-        </div>
+        </div> -->
 
         <!-- <div class="left-col">
           <div class="featured">
@@ -118,7 +176,7 @@
 
           
         </div> -->
-      </div>
+      <!-- </div> -->
     </section>
 
   </div>
@@ -306,7 +364,9 @@
               <a href="https://allblackstours.com/">
 
                 <div class="content-card-image">
-                  <img src="https://analyticsinsight.b-cdn.net/wp-content/uploads/2021/07/Witness-Largest-Single-Day-Rise-Bitcoin-Hit-US39K-for-E-commerce-Giant.jpg" alt="Shop">
+                  <img
+                    src="https://analyticsinsight.b-cdn.net/wp-content/uploads/2021/07/Witness-Largest-Single-Day-Rise-Bitcoin-Hit-US39K-for-E-commerce-Giant.jpg"
+                    alt="Shop">
 
                 </div>
                 <div class="content-card-title">
@@ -326,7 +386,9 @@
               <a href="https://www.allblackshop.com/">
 
                 <div class="content-card-image">
-                  <img src="https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2020/06/0/0/bitcoin-iStock.jpg?ve=1&tl=1" alt="Shop2">
+                  <img
+                    src="https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2020/06/0/0/bitcoin-iStock.jpg?ve=1&tl=1"
+                    alt="Shop2">
 
                 </div>
                 <div class="content-card-title">
