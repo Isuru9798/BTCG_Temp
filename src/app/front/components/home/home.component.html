@@ -38,8 +38,9 @@
                   <h2>Bitcoin is an innovative payment
                   </h2>
                   <div class="time">Bitcoin uses peer-to-peer technology</div>
-                  <div class="blurb">managing transactions and the issuing of bitcoins is carried out collectively by the network.
-                    
+                  <div class="blurb">managing transactions and the issuing of bitcoins is carried out collectively by
+                    the network.
+
                   </div>
                   <div class="actions">
                     <a href="#" class="btn btn-lg btn-outline-dark">Sign up</a>
@@ -80,9 +81,10 @@
         </div>
       </ngx-slick-carousel>
     </section> -->
-    <div class="videos-list slider-fade" style="padding: 10px 25px 30px;">
+    <div class="videos-list full-slider-btn-hover slider-fade" style="padding: 10px 25px 30px;">
       <div class="inner">
-        <ngx-slick-carousel class="carousel full-width-carcarousel" #slickModal1="slick-carousel" [config]="slideConfigHeader">
+        <ngx-slick-carousel class="carousel full-width-carcarousel" #slickModal1="slick-carousel"
+          [config]="slideConfigHeader">
           <div ngxSlickItem *ngFor="let slide of fullWidthSlider" class="slide">
             <img src="{{ slide.img }}" alt="" style="width: 100%;
             display: block;
@@ -103,13 +105,13 @@
 
           <h4>Company News</h4>
 
-          <a href="#">View all<i class="fas fa-angle-left"></i></a>
+          <a href="#">View all &nbsp;<i class="fas fa-angle-right"></i></a>
 
         </div>
 
         <!-- <div class="row"> -->
-        <div class="videos-list slider-fade" style="padding: 10px 25px 30px;">
-          <div class="inner">
+        <div class="videos-list slider-fade slider-btn-hover" style="padding: 10px 25px 30px;">
+          <div class="inner post-slide">
 
             <!-- <ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig">
                 <ng-container *ngFor="let slide of slides">
@@ -161,10 +163,10 @@
       <div class="wrapper">
         <div class="head">
           <h4>Latest News</h4>
-          <a href="#">View all<i class="fas fa-angle-right"></i></a>
+          <a href="#">View all &nbsp;<i class="fas fa-angle-right"></i></a>
         </div>
-        <div class="news-list" style="padding: 10px 25px 30px;">
-          <div class="inner">
+        <div class="news-list slider-btn-hover" style="padding: 10px 25px 30px;">
+          <div class="inner post-slide">
             <ngx-slick-carousel class="carousel" #newsModel="slick-carousel" [config]="slideConfig"
               (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
               (beforeChange)="beforeChange($event)">
@@ -247,9 +249,9 @@
           </div>
 
           <div class="logo show-promo-item ">
-            <a href="#"
-              target="_blank"><img src="../../../../assets/images/Uploads-SRAU20-02-v2__ScaleHeightWzEyMF0.png"
-                alt="title" height="120"></a>
+            <a href="#" target="_blank"><img
+                src="../../../../assets/images/Uploads-SRAU20-02-v2__ScaleHeightWzEyMF0.png" alt="title"
+                height="120"></a>
           </div>
 
           <div class="logo show-promo-item ">

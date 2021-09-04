@@ -55,6 +55,8 @@ export class HomeComponent implements OnInit {
       autoplay: false,
       autoplaySpeed: 2000,
       dots: true,
+      prevArrow: '<div class="prev-slide"><i class="fas fa-chevron-left styleArrow "></i></div>',
+      nextArrow: '<div class="next-slide"><i class="fas fa-chevron-right styleArrow"></i></div>',
       responsive: [
          {
             breakpoint: 992,
@@ -83,9 +85,9 @@ export class HomeComponent implements OnInit {
       ]
    };
 
-   
 
-   constructor() { 
+
+   constructor() {
       this.headerSlider();
    }
 
@@ -99,6 +101,8 @@ export class HomeComponent implements OnInit {
          "autoplay": true,
          "autoplaySpeed": 2000,
          "dots": true,
+         "nextArrow": "<div class='full-next-slide'><i class='fas fa-chevron-right styleArrow'></div>",
+         "prevArrow": "<div class='full-prev-slide'><i class='fas fa-chevron-left styleArrow'></div>",
          "responsive": [
             {
                "breakpoint": 768,
